@@ -1,0 +1,591 @@
+@import url(common.css);
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+
+html{scroll-behavior: smooth;}
+
+body{font-family: fontawesome;}
+
+/* ___TOP___ */
+.top{
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+}
+.top a{
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: url(../image/top001.png) no-repeat;
+  transition: 0.3s;
+  animation: top 15s linear infinite;
+}
+.top a:hover{
+  background: url(../image/top002.png);
+}
+@keyframes top {
+  100%{rotate: 360deg;}
+}
+
+/* ___CART___ */
+.cart{
+  position: fixed;
+  right: 46px;
+  bottom: 130px;
+}
+.cart a{
+  display: block;
+  width: 60px;
+  height: 90px;
+  background: url(../image/cart001.png) no-repeat;
+  transition: 0.3s;
+}
+.cart a:hover{
+  display: block;
+  width: 60px;
+  height: 90px;
+  transform: rotate(10deg);
+  background: url(../image/cart001.png) no-repeat;
+}
+
+
+/* ___HEADER___ */
+header{
+  font-family: 'Nanum Myeongjo', serif;
+  width: 100%;
+  height: 700px;
+  position: relative;
+  background: url(../image/main01.jpg) no-repeat center center;
+  background-size: cover;
+  top: 0;
+  transition: 0.3s;
+  transition-delay: 0.5s;
+}
+header:hover{
+  background: url(../image/main02.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+
+/* __nav */
+nav{
+  width: 1200px;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  position: relative;
+}
+.logo img{
+  width: 150px;
+  height: 60px;
+  top: 20px;
+  position: absolute;
+}
+nav .login{
+  color: rgb(248, 197, 205);
+  width: 80px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 15px;
+  transition: 0.3s;
+}
+nav .login ul{display: flex;}
+nav .login ul li{
+  padding-right: 6px;
+  font-size: 18px;
+}
+nav .login li:hover{color:rgb(239, 170, 181)}
+
+.icon{
+  font-size: 20px;
+  color: rgb(248, 197, 205);
+  letter-spacing: 3px;
+  width: 80px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  transition: 0.3s;
+}
+.icon .fa:hover{color:rgb(239, 170, 181);}
+
+.gnb{
+  color: #797979;
+  font-weight: 700;
+  font-size: 23px;
+  letter-spacing: 1px;
+  position: absolute;
+  width: 380px;
+  height: 30px;
+  top: 40px;
+  left: 260px;
+}
+.gnb ul{display: flex;}
+.gnb ul li{
+  margin-right: 20px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.gnb ul li:hover{color: #111;}
+
+/* ___MORE___ */
+.more{
+  font-family: 'Nanum Myeongjo', serif;
+  background-color: 	#f9d3df;
+  border-radius: 30px;
+  width: 120px;
+  height: 50px;
+  line-height: 45px;
+  font-size: 25px;
+  color: #fbfaf1;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.more:hover{
+  background-color: lightpink;
+  color: #FFFAFA;
+}
+
+/* ___SECTION___ */
+section h2{
+  font-family: 'Noto Serif', serif;
+  width: inherit;
+  height: 100px;
+  line-height: 100px;
+  margin-bottom: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #6e6e6e;
+}
+section ul{display: flex;}
+
+
+/* __best */
+section #best ul{
+  width: 1200px;
+  height: 450px;
+  margin: auto;
+  justify-content: space-between;
+}
+#best ul li{
+  border-radius: 50%;
+  width: 380px;
+  height: 400px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#best ul li:nth-child(1){
+  background: url(../image/best01.png) no-repeat center center;
+  background-size: cover;
+}
+#best ul li:nth-child(1):hover{
+  background: url(../image/best011.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#best ul li:nth-child(2){
+  background: url(../image/best02.png) no-repeat center center;
+  background-size: cover;
+}
+#best ul li:nth-child(2):hover{
+  background: url(../image/best022.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#best ul li:nth-child(3){
+  background: url(../image/best03.png) no-repeat center center;
+  background-size: cover;
+}
+#best ul li:nth-child(3):hover{ 
+  background: url(../image/best033.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#best .besttxt{
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  width: 200px;
+  height: 100px;
+  top: 40%;
+  left: 90px;
+  opacity: 0;
+  transition: 0.3s;
+}
+#best .besttxt h3{font-size: 30px;}
+#best .besttxt span{font-size: 20px;}
+#best ul li:hover .besttxt{
+  color: #fff;
+  opacity: 1;
+}
+
+/* __new */
+section #new ul{
+  width: 1200px;
+  height: 590px;
+  margin: auto;
+  justify-content:space-between;
+}
+#new ul li{
+  width: 380px;
+  height: 530px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s;
+}
+
+#new ul li:nth-child(1){
+  background: url(../image/new1.jpg) no-repeat center center;
+  background-size: cover;
+}
+#new ul li:nth-child(2){
+  background: url(../image/new2.jpg) no-repeat center center;
+  background-size: cover;
+}
+#new ul li:nth-child(3){
+  background: url(../image/new3.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#new ul li:hover{
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, 
+  rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.content{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: #fff;
+  text-align: center;
+  width: inherit;
+  height: 110px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.content h3{margin-top: 8px;}
+.content>span{color: #e5e5e5;}
+.content div{
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-top: 5px;
+}
+.content input[name=like]{display: none;}
+.content input[name=like] + span:before{
+  content:"\f004";
+  color: azure;
+  cursor: pointer;
+}
+.content input[name=like]:checked + span:before{
+  content:"\f004";
+  color: lightcoral;
+}
+
+li:hover .content{
+  top: 420px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 15px;
+}
+
+
+/* __review */
+section #review ul{
+  width: 1300px;
+  height: 450px;
+  margin: auto;
+  justify-content: space-between;
+  animation: review 3s linear infinite;
+  box-sizing: border-box;
+}
+@keyframes review{
+  0%{transform: translateX(30px);}
+  100%{transform: translateX(-30px);}
+}
+
+#review ul li{
+  border-radius: 10%;
+  width: 320px;
+  height: 380px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#review ul li:nth-child(1){
+  background: url(../image/review1.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#review ul li:nth-child(2){
+  background: url(../image/review2.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#review ul li:nth-child(3){
+  background: url(../image/review3.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#review ul li:nth-child(4){
+  background: url(../image/review4.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#review .text{
+  background-color: #ffffff96;
+  color: #222;
+  position: absolute;
+  text-align: center;
+  width: inherit;
+  height: 130px;
+  bottom: -50px;
+  left: 0;
+  padding-top: 15px;
+  transition: 0.5s;
+}
+#review .text span{color: #222;}
+#review .text b{
+  display: block;
+  font-size: 18px;
+  color: tan;
+  margin-bottom: 8px;
+}
+
+#review ul li:hover{
+  transform: translateY(-20px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+#review ul li:hover .text{transform: translateY(-50px);}
+
+
+/* __lookbook */
+#lookbook{
+  width: 100%;
+  height: 800px;
+}
+#lookbook .photo{
+  display: flex;
+  width: 1200px;
+  height: 600px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.photo .look1{
+  background: url(../image/look1.jpg) no-repeat center;
+  background-size: cover;
+  width: 400px;
+  height: 500px;
+  border-radius: 48% 48% 0 0;
+}
+.photo .look2{
+  width: 780px;
+  height: 350px;
+  transform: translateY(-30px);
+}
+.photo .look2 li{
+  margin-right: 7px;
+  border-radius: 5%;
+  transition: 0.3s;
+}
+.photo .look2 li:nth-child(1){
+  background: url(../image/look2.jpg) no-repeat center;
+  background-size: cover;
+  width: 300px;
+  height: 350px;
+}
+.photo .look2 li:nth-child(2){
+  background: url(../image/look3.jpg) no-repeat center;
+  background-size: cover;
+  width: 300px;
+  height: 350px;
+}
+.photo .look2 li:nth-child(3){
+  background: url(../image/look4.jpg) no-repeat center;
+  width: 300px;
+  height: 350px;
+}
+
+.photo .look2 li:hover{
+  transform: scale(1.1);
+}
+
+#lookbook p{
+  display: inline-block;
+  font-size: 20px;
+  position: absolute;
+  transform: translateY(-120px) translateX(800px);
+}
+#lookbook p b{display: block; font-size: 25px;}
+
+
+
+/* __membership */
+#membership .item{
+  width: 100%;
+  height: 400px;
+  background-color: #fff9f9d3;
+  padding-top: 20px;
+  margin-bottom: 70px;
+}
+#membership ul:first-child{
+  width: 1200px;
+  height: 280px;
+  padding-bottom: 20px;
+  margin: auto;
+  justify-content: space-between;
+}
+.item ul:first-child li{
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+.item ul:first-child li:nth-child(1){
+  background: url(../image/coupon.png) no-repeat center center;
+  background-color: #ffffff;
+}
+.item ul:first-child li:nth-child(2){
+  background: url(../image/free.png) no-repeat center center;
+  background-color: #ffffff;
+}
+.item ul:first-child li:nth-child(3){
+  background: url(../image/point.png) no-repeat center center;
+  background-color: #ffffff;
+}
+
+#membership ul:first-child li:hover{
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, 
+  rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+#membership ul:last-child{
+  width: 1200px;
+  height: 80px;
+  margin: auto;
+  justify-content: space-between;
+}
+.item ul:last-child li{
+  width: 250px;
+  height: 100px;
+  margin: auto;
+  text-align: center;
+}
+.item ul:last-child li span{
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ___SNS___ */
+#sns p{
+  text-align: center;
+  font-style: italic;
+  font-size: 15px;
+  color: #666;
+  padding-bottom: 5px;
+}
+#sns ul{
+  width: 1170px;
+  height: 470px;
+  margin: auto;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+#sns ul li{
+  width: 230px;
+  height: 230px;
+  margin: auto;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+#sns ul li:nth-child(1){
+  background: url(../image/insta01.png) no-repeat center center;
+}
+#sns ul li:nth-child(2){
+  background: url(../image/insta02.png) no-repeat center center;
+}
+#sns ul li:nth-child(3){
+  background: url(../image/insta03.png) no-repeat center center;
+}
+#sns ul li:nth-child(4){
+  background: url(../image/insta04.png) no-repeat center center;
+}
+#sns ul li:nth-child(5){
+  background: url(../image/insta05.png) no-repeat center center;
+}
+#sns ul li:nth-child(6){
+  background: url(../image/insta06.png) no-repeat center center;
+}
+#sns ul li:nth-child(7){
+  background: url(../image/insta07.png) no-repeat center center;
+}
+#sns ul li:nth-child(8){
+  background: url(../image/insta08.png) no-repeat center center;
+}
+#sns ul li:nth-child(9){
+  background: url(../image/insta09.png) no-repeat center center;
+}
+#sns ul li:nth-child(10){
+  background: url(../image/insta10.png) no-repeat center center;
+}
+
+#sns ul li:hover{filter: grayscale(1);}
+
+#sns ul li:before{
+  position: absolute;
+  content:"\f16d";
+  font-size: 50px;
+  color: #000;
+  top: 90px;
+  left: 90px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+#sns ul li:hover:before{opacity: 1;}
+
+/* ___FOOTER___ */
+footer{
+  width: 100%;
+  height: 130px;
+  background-color: #eeeeee;
+  margin-top: 70px;
+}
+.footer{
+  width: 1200px;
+  height: inherit;
+  margin: auto;
+  display: flex;
+}
+.logo2 img{
+  width: 120px;
+  height: 120px;
+  margin: 5px 0 0 50px;
+}
+footer .copy{
+  font-size: 13px;
+  font-style: italic;
+  color: #777;
+  margin: 60px 0 0 650px;
+}
