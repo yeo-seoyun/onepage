@@ -1,4 +1,4 @@
-@import url(common.css);
+@import url('common.css');
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap');
@@ -27,7 +27,7 @@ body{font-family: fontawesome;}
   background: url(../image/top002.png);
 }
 @keyframes top {
-  100%{rotate: 360deg;}
+  100%{transform: rotate(365deg);}
 }
 
 /* ___CART___ */
@@ -390,7 +390,9 @@ section #review ul{
   width: 400px;
   height: 500px;
   border-radius: 48% 48% 0 0;
+  position: relative;
 }
+
 .photo .look2{
   width: 780px;
   height: 350px;
